@@ -45,7 +45,7 @@
                         return
                     }
                     var query = $(this).val();
-                    var searchPage = "http://localhost:4000https://securec0ding.github.io/search/?q=" + query;
+                    var searchPage = "http://localhost:4000https://rules.securecoding.ir/search/?q=" + query;
                     document.location = searchPage;
                     return false;
                 });

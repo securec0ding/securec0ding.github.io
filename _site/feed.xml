@@ -4,10 +4,10 @@
     <title>Secure Coding</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://localhost:4000https://securec0ding.github.io/</link>
-    <atom:link href="http://localhost:4000https://securec0ding.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Dec 2022 22:03:43 +0330</pubDate>
-    <lastBuildDate>Tue, 06 Dec 2022 22:03:43 +0330</lastBuildDate>
+    <link>http://localhost:4000https://rules.securecoding.ir/</link>
+    <atom:link href="http://localhost:4000https://rules.securecoding.ir/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 06 Dec 2022 22:07:05 +0330</pubDate>
+    <lastBuildDate>Tue, 06 Dec 2022 22:07:05 +0330</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
   </channel>

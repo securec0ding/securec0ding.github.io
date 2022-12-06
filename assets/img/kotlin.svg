@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #919295;
+      }
+
+      .cls-3 {
+        fill: #434447;
+      }
+
+      .cls-4 {
+        fill: #6c6d6f;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_7720" data-name="Groupe 7720" transform="translate(-281 -469)">
+    <rect id="Rectangle_11543" data-name="Rectangle 11543" class="cls-1" width="24" height="24" transform="translate(281 469)"/>
+    <g id="Groupe_7697" data-name="Groupe 7697" transform="translate(-1268.022 -16594.229)">
+      <path id="XMLID_2_" class="cls-2" d="M0,38.741,8.841,29.9l8.782,8.841Z" transform="translate(1551.794 17045.674)"/>
+      <path id="Tracé_12036" data-name="Tracé 12036" class="cls-3" d="M0,0H8.841L0,9.546Z" transform="translate(1551.794 17066.793)"/>
+      <path id="Tracé_12035" data-name="Tracé 12035" class="cls-4" d="M8.841,0,0,9.311v8.312L8.841,8.782,17.623,0Z" transform="translate(1551.794 17066.793)"/>
+    </g>
+  </g>
+</svg>

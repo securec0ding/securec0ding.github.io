@@ -1,0 +1,55 @@
+- title: زبان
+  url: docs
+  links:
+    - title: "PHP"
+      url: "docs/php"
+    - title: "C"
+      url: "docs/c"
+    - title: "C++"
+      url: "docs/cpp"
+    - title: "C#"
+      url: "docs/csharp"
+    - title: "Go"
+      url: "docs/go"
+    - title: "Java"
+      url: "docs/java"
+    - title: "Javascript"
+      url: "docs/javascript"
+    - title: "Kotlin"
+      url: "docs/kotlin"
+    - title: "Python"
+      url: "docs/python"
+    - title: "Ruby"
+      url: "docs/ruby"
+    - title: "Scala"
+      url: "docs/scala"
+    - title: "Objective-C"
+      url: "docs/objective-c"
+    - title: "Swift"
+      url: "docs/swift"
+    - title: "Terraform"
+      url: "docs/terraform"
+    - title: "Kubernetes"
+      url: "docs/kubernetes"
+    - title: "VB.NET"
+      url: "docs/vbnet"
+#    - title: Versioning
+#      url: "docs/versioning"
+#    - title: "About"
+#      url: "about"
+#    - title: "News"
+#      url: "news"
+#      children:
+#        - title: Features
+#          url: "docs/getting-started#getting-started"
+#        - title: Development
+#          url: "docs/getting-started#development"
+#        - title: Customization
+#          url: "docs/getting-started#customization"
+#- title: "Extras"
+#  url: "docs/extras"
+#  links:
+#    - title: Quizzes
+#      url: "docs/extras/example-quiz"
+#    - title: Tags Page
+#      url: "tags"

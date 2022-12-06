@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #8a8c8f;
+      }
+
+      .cls-3 {
+        fill: #434447;
+      }
+    </style>
+  </defs>
+  <g id="Groupe_7727" data-name="Groupe 7727" transform="translate(-281 -733)">
+    <rect id="Rectangle_11551" data-name="Rectangle 11551" class="cls-1" width="24" height="24" transform="translate(281 733)"/>
+    <g id="Groupe_7705" data-name="Groupe 7705" transform="translate(-792.8 -1114.12)">
+      <path id="path7" class="cls-2" d="M6.6-25.822S17.12-24.769,17.12-23.015v-4.209s0-1.754-10.523-2.806Z" transform="translate(1074.403 1882.837)"/>
+      <path id="path14" class="cls-2" d="M6.6-6.129S17.12-5.077,17.12-3.323V-7.532s0-1.754-10.523-2.806Z" transform="translate(1074.403 1868.757)"/>
+      <path id="path21" class="cls-3" d="M17.12-39.877v4.209s0,1.754-10.523,2.806v-4.209S17.12-38.123,17.12-39.877" transform="translate(1074.403 1889.877)"/>
+      <path id="path28" class="cls-3" d="M6.6-17.378S17.12-18.431,17.12-20.185v4.209s0,1.754-10.523,2.806Z" transform="translate(1074.403 1875.797)"/>
+      <path id="path35" class="cls-3" d="M6.6,6.523V2.314S17.12,1.262,17.12-.492V3.717s0,1.754-10.523,2.806" transform="translate(1074.403 1861.717)"/>
+    </g>
+  </g>
+</svg>

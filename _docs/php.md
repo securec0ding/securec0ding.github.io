@@ -95,6 +95,7 @@ $name = strip_tags(htmlentities($_POST['name']));
 $message = strip_tags(htmlentities($_POST['message']));
 {% endhighlight %}
 
+
 مطالعه بیشتر:
 <a href="https://securecoding.ir/index.php/%D8%AA%D8%B2%D8%B1%DB%8C%D9%82_%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA(Cross_Site_Scripting)">آسیب پذیری XSS چیست</a>
 

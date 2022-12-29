@@ -70,6 +70,7 @@ $messages = $stmt->fetchAll();
 {% endhighlight %}
 
 
+
 ##### ✅ کد اصلاح شده توسط ‍`htmlentities`
 
 {% highlight php %}

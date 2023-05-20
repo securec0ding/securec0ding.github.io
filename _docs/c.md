@@ -7,40 +7,30 @@ description: C Vulnerabilities
 
 # C
 
-### آسیب پذیری XSS
+### آسیب پذیری Buffer Overflow
 
 <button class="btn btn-danger">آسیب پذیری</button>
 
 
-آسیب پذیری XSS (Cross-Site Scripting) یکی از مهم ترین آسیب های امنیتی است که می تواند در برنامه های وب وجود داشته باشد. این آسیب پذیری به کاربران اجازه می دهد تا از وب سایت یک سفارشی سازی با استفاده از اسکریپت های جاوااسکریپت اجرا کنند. این اسکریپت ها می توانند بر روی وب سایت های دیگر هم نشان داده شوند و باعث آسیب های امنیتی بزرگ می شوند.
-
-برای جلوگیری از آسیب پذیری XSS، لازم است که تمام ورودی های کاربر در برنامه های وب به طور دقیق تأیید و سانتی سازی شوند. همچنین می توان از کتابخانه های مخصوص امنیتی برای اعمال عملیات سانتی سازی استفاده کرد.
 
 
 ##### 🐞 کد آسیب پذیر
 
 {% highlight php %}
-#include <stdio.h>
-#include <string.h>
-
-void print_page(char *name, char *message) {
-  printf("<html><head><title>XSS Example</title></head><body>\n");
-  printf("<h1>Welcome, %s!</h1>\n", name);
-  printf("<p>%s</p>\n", message);
-  printf("</body></html>\n");
+void copy_string(char* dest, char* src) {
+  int i = 0;
+  while(src[i] != '\0') {
+    dest[i] = src[i];
+    i++;
+  }
+  dest[i] = '\0';
 }
 
-int main(int argc, char **argv) {
-  char name[64];
-  char message[1024];
-
-  printf("Content-Type: text/html\n\n");
-
-  strcpy(name, getenv("QUERY_STRING"));
-  strcpy(message, getenv("QUERY_STRING"));
-
-  print_page(name, message);
-
+int main() {
+  char str1[6];
+  char str2[10] = "example";
+  copy_string(str1, str2);
+  printf("%s", str1);
   return 0;
 }
 {% endhighlight %}
@@ -50,16 +40,21 @@ int main(int argc, char **argv) {
 ##### ✅ کد اصلاح شده توسط `htmlspecialchars`
 
 {% highlight php %}
-void print_page(char *name, char *message) {
-  char page[1024];
+void copy_string(char* dest, char* src, size_t dest_size) {
+  int i = 0;
+  while(src[i] != '\0' && i < dest_size - 1) {
+    dest[i] = src[i];
+    i++;
+  }
+  dest[i] = '\0';
+}
 
-  sprintf(page, "<html><head><title>XSS Example</title></head><body>\n");
-  sprintf(page + strlen(page), "<h1>Welcome, %s!</h1>\n", htmlspecialchars(name, 64));
-  sprintf(page + strlen(page), "<p>%s</p>\n", htmlspecialchars(message, 1024));
-  sprintf(page + strlen(page), "</body></html>\n");
-
-  printf("Content-Type: text/html\n\n");
-  printf("%s", page);
+int main() {
+  char str1[6];
+  char str2[10] = "example";
+  copy_string(str1, str2, sizeof(str1));
+  printf("%s", str1);
+  return 0;
 }
 {% endhighlight %}
 
@@ -67,7 +62,7 @@ void print_page(char *name, char *message) {
 
 
 مطالعه بیشتر:
-<a href="https://securecoding.ir/index.php/%D8%AA%D8%B2%D8%B1%DB%8C%D9%82_%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA(Cross_Site_Scripting)">آسیب پذیری XSS چیست</a>
+<a href="#"></a>
 
 
 

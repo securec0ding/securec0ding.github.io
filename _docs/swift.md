@@ -424,12 +424,6 @@ func checkPermission(user: User, permission: String) -> Bool {
 }
 {% endhighlight %}
 
-The noncompliant code simply checks if a user has a specific permission by comparing the user's permissions array with the specified permission. However, this code lacks proper authorization validation and does not implement any access control mechanism. It assumes that the user's permissions are stored and managed securely, which may not be the case.
-
-
-To address these issues, here's an example of compliant code:
-
-
 
 
 

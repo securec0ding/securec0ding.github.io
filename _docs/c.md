@@ -37,7 +37,8 @@ int main() {
 
 
 
-##### ✅ کد اصلاح شده توسط `htmlspecialchars`
+##### ✅ کد اصلاح شده 
+
 
 {% highlight php %}
 void copy_string(char* dest, char* src, size_t dest_size) {

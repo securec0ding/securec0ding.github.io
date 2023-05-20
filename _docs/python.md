@@ -224,7 +224,7 @@ def decrypt_data(encrypted_data, key):
     return decrypted_data.decode('utf-8')
 }
 
-
+{% endhighlight %}
 
 
 

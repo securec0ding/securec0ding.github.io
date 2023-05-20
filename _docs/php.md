@@ -169,7 +169,7 @@ function encryptData($data, $key) {
     $encryptedData = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $data, MCRYPT_MODE_CBC, $iv);
     return $encryptedData;
 }
-
+{% endhighlight %}
 
 
 
